@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42d437beda625ad458d11a04f7e3f6f0, type: 3}
+  m_Name: ProfesText
+  m_EditorClassIdentifier: 
+  textos:
+  - "Un fracaso mecanico, dinamico y estetico. Incluso Dise\xF1o de Videojuegos fue
+    demasiado para ti."
+  - "Eres el complemento a dos de la miseria. Fundamentos de Computadores rompio
+    tus sue\xF1os."
+  - La programacion es un arte, y tu no eres ningun artista. Fundamentos de la Programacion
+    I se mostro implacable.
+  - Ojala esta asignatura viniese mas tarde con contenido mas relevante. Motores
+    de Videojuegos acabo con tu paciencia.
+  - No mires su canal de youtube. Matematica Discreta no fue como ningun videojuego
+    que hayas jugado.
+  - "Tu organizacion es un desastre. Las Metodolog\xEDas Agiles de Produccion requieren
+    mas de ti."
+  - Metodos Matematicos? Quien metio tantas matematicas en mi carrera de maquinitas?
+  - Te duele el culo? Esos bancos de Fundamentos de Color y Composicion han cobrado
+    muchas victimas.
+  - Aprobar esta carrera requiere aguante. Fundamentos de la Programacion II fue
+    un fundamento mas del que podias tolerar.
+  - "Da igual lo bien que se te de vomitar teoria. Si no tienes etica laboral, Proyectos
+    I estar\xE1 siempre fuera de tu alcance."
+  - Ni Norte, ni Sur, ni Este ni Oeste. Tu vas para abajo, y Estructura de Computadores
+    se rie sobre tu fiambre patetico.
+  - Todos te decian que romperias records. Y aqui estas, el primer suspenso en Modelado
+    en 2D y 3D.
+  - Nos disculpamos por la inconveniencia. Caiste frente a TPV I, exhausto pero con
+    una cierta satisfaccion.
+  - El juez te halla suspenso en EDA.
+  - Escribiste Programacion de Videojuegos en Lenguajes Interpretados == aprobado.
+    Pero en javascript necesitas mas iguales.
+  - Tu aprobado en Informatica Grafica era trasparente, y lo renderizaste antes que
+    un objeto opaco.
+  - Suspendiste Desarrollo de Sistemas Interactivos. Podias copiar en el examen,
+    pedazo de idiota.
+  - Las diapositivas de TPV IIestaban en comic sans. Entendemos que no las mirases.
+  - Estadisticamete, tu Probabilidad de aprobar siempre fue nula.
+  - Se dice que Proyectos II es el mejor juego que haces en la carrera e incluso
+    eso merecio un suspenso.
+  - Sinbad ni siquiera se presento al examen de Informatica Grafica II, y aun asi
+    saco mejor nota que tu.
+  - Si existiera un Oscar para la peor animacion posible, tendria que darte 2 premios.
+  - En realidad, aprobaste MARP. Pero no fuiste capaz de demostrarlo.
+  - No fuiste capaz de programar la gravedad de tu suspenso en Simulacion Fisica.
+  - Sistemas Operativos es eterno e implacable.
+  - Caiste en una optativa de tu eleccion. Eres tu propio peor enemigo.
+  - Caiste en una optativa de tu eleccion. Eres tu propio peor enemigo.
+  - No aprendiste pseudocodigo, asi que te llevaste un pseudoaprobado en Inteligencia
+    Artificial.
+  - Se te cayo el wifi durante el examen de Redes.
+  - Estabas en Proyectos III, y aun no sabias usar Visual Studio.
+  - Escuchaste eso? Suspendiste Sonido.
+  - Convertiste Aprendizaje Automatico en un suspenso automatico.
+  - Nos gustaria decirte por que suspendiste Consolas. Pero el NDA nos lo impide.
+  - Hiciste la practica de Moviles en iPhone, pero el profesor usa Android.
+  - Caiste en una optativa de tu eleccion. Eres tu propio peor enemigo.
+  - Caiste en una optativa de tu eleccion. Eres tu propio peor enemigo.
+  - "Estabas a finales de 4\xBA y aun no sabias cual era tu objetivo. Suspendiste
+    Usabilidad y An\xE1lisis de datos."
+  - En Negocio Digital te ofertaron un aprobado, pero demandaron tu alma.
+  - Tu tribunal de TFG consistio completamente de profesores a los que has insultado.
+  - Huye. Esta es tu ultima oportunidad.
+  - "Tras cuatro a\xF1os de guerra, plaga y hambruna, emerges como el primer graduado
+    de Videojuegos de la UCM. Enhorabuena?"

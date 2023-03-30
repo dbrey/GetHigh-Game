@@ -1,0 +1,464 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f137868e6774a48950c5a9c02c8faa, type: 3}
+  m_Name: Question UCM
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: Has aprobado SO?
+    questionDuration: 10
+    profeSprite: {fileID: 21300000, guid: 2424fd4ec7ca87f44a3e70c129127dc5, type: 3}
+    answers:
+    - answer: No
+      isCorrect: 1
+      powerup: 0
+    - answer: La gente extraordinaria, va a extraordinaria
+      isCorrect: 1
+      powerup: 0
+    - answer: Si
+      isCorrect: 0
+      powerup: 0
+  - questionText: Vais a terminar el juego a tiempo?
+    questionDuration: 10
+    profeSprite: {fileID: 4001442472916971327, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Bueno...
+      isCorrect: 0
+      powerup: 0
+    - answer: Acaso no vivimos en un juego ya?
+      isCorrect: 1
+      powerup: 0
+    - answer: No
+      isCorrect: 0
+      powerup: 0
+  - questionText: Como vais a organizaros en la Game Jam?
+    questionDuration: 10
+    profeSprite: {fileID: 21300000, guid: e6c61c1de34e0764d85b37a3dd01bba6, type: 3}
+    answers:
+    - answer: 'Pivotal '
+      isCorrect: 0
+      powerup: 0
+    - answer: Trello
+      isCorrect: 0
+      powerup: 0
+    - answer: Google Drive
+      isCorrect: 0
+      powerup: 0
+    - answer: No existe la organizacion, solo la anarquia
+      isCorrect: 1
+      powerup: 0
+  - questionText: Cual es el mayor dilema del programador?
+    questionDuration: 10
+    profeSprite: {fileID: 21300000, guid: 9e7de9dad1e6c27429ad4a0ad9346bf7, type: 3}
+    answers:
+    - answer: No funciona, pero no se por que
+      isCorrect: 1
+      powerup: 0
+    - answer: Funciona, pero no se por que
+      isCorrect: 0
+      powerup: 0
+  - questionText: Quien tiene razon a la hora de hacer un break en un for?
+    questionDuration: 10
+    profeSprite: {fileID: 5074963065193959036, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Miguel, sin duda
+      isCorrect: 1
+      powerup: 0
+    - answer: Jaime, obvio
+      isCorrect: 1
+      powerup: 0
+    - answer: Samir, por supuesto
+      isCorrect: 1
+      powerup: 0
+  - questionText: Cuando es la entrega del proyecto?
+    questionDuration: 10
+    profeSprite: {fileID: 1405936903238025810, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: A la hora M
+      isCorrect: 1
+      powerup: 0
+    - answer: El 22/2/2022 a las 22:22:22
+      isCorrect: 1
+      powerup: 0
+    - answer: 5 minutos antes del examen
+      isCorrect: 1
+      powerup: 0
+  - questionText: Como se llama mi hijo?
+    questionDuration: 10
+    profeSprite: {fileID: 4001442472916971327, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Angel?
+      isCorrect: 1
+      powerup: 0
+    - answer: Sin duda Angel
+      isCorrect: 1
+      powerup: 0
+    - answer: Angel, por supuesto
+      isCorrect: 1
+      powerup: 0
+  - questionText: 'Que es lo mas importante para explorar la Luna? '
+    questionDuration: 10
+    profeSprite: {fileID: 21300000, guid: a9a8e714b2432b047a364ed3a60f8a83, type: 3}
+    answers:
+    - answer: "Bote neum\xE1tico"
+      isCorrect: 0
+      powerup: 0
+    - answer: Botiquin de primeros auxilios
+      isCorrect: 0
+      powerup: 0
+    - answer: Ropa termica
+      isCorrect: 0
+      powerup: 0
+    - answer: Una lata de comida
+      isCorrect: 1
+      powerup: 0
+  - questionText: Que debes hacer cuando encuentras un error de compilacion?
+    questionDuration: 10
+    profeSprite: {fileID: 21300000, guid: 9e7de9dad1e6c27429ad4a0ad9346bf7, type: 3}
+    answers:
+    - answer: Cierra el ordenador. Acepta que vas a junio. Llora
+      isCorrect: 1
+      powerup: 0
+    - answer: No existe un error si no hay consola para comprobarlo
+      isCorrect: 1
+      powerup: 0
+    - answer: Intenta arreglarlo
+      isCorrect: 0
+      powerup: 0
+  - questionText: Que hicieron los profesores al inicio de la cuarentena?
+    questionDuration: 10
+    profeSprite: {fileID: 21300000, guid: 29e4d56f9440fe34f968fa738d1a9cd5, type: 3}
+    answers:
+    - answer: Vacaciones anticipadas
+      isCorrect: 0
+      powerup: 0
+    - answer: Aprender a usar Collaborate
+      isCorrect: 0
+      powerup: 0
+    - answer: Fingir estar muertos y regresar para el examen
+      isCorrect: 1
+      powerup: 0
+  - questionText: Donde es mejor sentarse en el aula de artes?
+    questionDuration: 10
+    profeSprite: {fileID: 21300000, guid: 29e4d56f9440fe34f968fa738d1a9cd5, type: 3}
+    answers:
+    - answer: En las sillas de tortura
+      isCorrect: 0
+      powerup: 0
+    - answer: En los taburetes de tortura
+      isCorrect: 0
+      powerup: 0
+    - answer: No te sientas, eres el modelo
+      isCorrect: 0
+      powerup: 0
+    - answer: En los potros de tortura
+      isCorrect: 1
+      powerup: 0
+  - questionText: Que significa Complutense?
+    questionDuration: 10
+    profeSprite: {fileID: -1736928041035241418, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Centro del saber comunal
+      isCorrect: 0
+      powerup: 0
+    - answer: "\xBFQui zignifiki clownputisi?"
+      isCorrect: 0
+      powerup: 0
+    - answer: Ciudad de payasos
+      isCorrect: 0
+      powerup: 0
+    - answer: Alcala de Henares
+      isCorrect: 1
+      powerup: 0
+  - questionText: Que es la carrera de Videojuegos?
+    questionDuration: 10
+    profeSprite: {fileID: -1736928041035241418, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Ciencias
+      isCorrect: 1
+      powerup: 0
+    - answer: Artes?
+      isCorrect: 0
+      powerup: 0
+    - answer: Ingenieria
+      isCorrect: 0
+      powerup: 0
+    - answer: Nada, es nada
+      isCorrect: 1
+      powerup: 0
+  - questionText: Da like y subscribete a mi canal
+    questionDuration: 10
+    profeSprite: {fileID: -8179870912509109453, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Si
+      isCorrect: 1
+      powerup: 0
+    - answer: No tienes opcion, lo haces
+      isCorrect: 1
+      powerup: 0
+  - questionText: Que significa UCM?
+    questionDuration: 10
+    profeSprite: {fileID: -1736928041035241418, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Universidad Complutense de Madrid
+      isCorrect: 0
+      powerup: 0
+    - answer: Universo Cinematografico de Marvel
+      isCorrect: 0
+      powerup: 0
+    - answer: Un Commit Malo
+      isCorrect: 1
+      powerup: 0
+    - answer: Unidad de Contencion de Marginados
+      isCorrect: 0
+      powerup: 0
+  - questionText: 'Que hace un buen modelo? '
+    questionDuration: 10
+    profeSprite: {fileID: 21300000, guid: 29e4d56f9440fe34f968fa738d1a9cd5, type: 3}
+    answers:
+    - answer: He venido a hacer un anuncio, Shadow The Hedgehog es un hijo de puta,
+        se orino en mi puta esposa. Asi es, saco su pene de erizo y orino a mi puta
+        esposa, y dijo que su pene era "Asi de grande" y yo dije que eso es repugnante,
+        asi que estoy haciendo una publicacion destacada en mi twitter punto com
+      isCorrect: 0
+      powerup: 0
+    - answer: "Bueno, pues es que realmente si te fijas, esta figura tiene un mayor
+        valor artistico que el resto que lo rodean. El hecho de que sujete su desesperacion
+        en sus dos manos tan juntas es indicativo de un entendimiento emocional que
+        solo puede transmitirse con una empat\xEDa refinada. "
+      isCorrect: 1
+      powerup: 0
+    - answer: Para ser justos, debes tener un coeficiente intelectual muy alto para
+        entender a Rick y Morty. El humor es extremadamente sutil, y sin una comprension
+        solida de la fisica teorica, la mayoria de los chistes pasaran por alto la
+        cabeza de un espectador tipico...
+      isCorrect: 0
+      powerup: 0
+  - questionText: El Pong...
+    questionDuration: 10
+    profeSprite: {fileID: 1405936903238025810, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Lo hacemos
+      isCorrect: 1
+      powerup: 0
+    - answer: Lo miramos
+      isCorrect: 0
+      powerup: 0
+    - answer: Lo jugamos
+      isCorrect: 0
+      powerup: 0
+    - answer: Lo adoramos
+      isCorrect: 0
+      powerup: 0
+  - questionText: Necesitamos un juego para una practica
+    questionDuration: 10
+    profeSprite: {fileID: 5074963065193959036, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Un juego de estrategia PvP
+      isCorrect: 0
+      powerup: 0
+    - answer: El puto PacMan otra vez
+      isCorrect: 1
+      powerup: 0
+    - answer: Un plataformas
+      isCorrect: 0
+      powerup: 0
+    - answer: Un juego de texto
+      isCorrect: 0
+      powerup: 0
+  - questionText: Como se hace el testing?
+    questionDuration: 10
+    profeSprite: {fileID: 21300000, guid: e6c61c1de34e0764d85b37a3dd01bba6, type: 3}
+    answers:
+    - answer: "Jugamos nuestro propio juego un d\xEDa antes de la entrega"
+      isCorrect: 1
+      powerup: 0
+    - answer: Tests de unidad
+      isCorrect: 0
+      powerup: 0
+    - answer: Ayudandonos entre grupos
+      isCorrect: 0
+      powerup: 0
+    - answer: Testers pagados (jaja)
+      isCorrect: 0
+      powerup: 0
+  - questionText: "El verdadero profesor de Dise\xF1o"
+    questionDuration: 10
+    profeSprite: {fileID: -1736928041035241418, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Federico Peinado
+      isCorrect: 0
+      powerup: 0
+    - answer: youtube.com/TheGameMakersToolkit
+      isCorrect: 1
+      powerup: 0
+    - answer: Proyectos I, II y III
+      isCorrect: 1
+      powerup: 0
+    - answer: Jesse Schell
+      isCorrect: 1
+      powerup: 0
+  - questionText: El profesor de EDA
+    questionDuration: 10
+    profeSprite: {fileID: 21300000, guid: 9e7de9dad1e6c27429ad4a0ad9346bf7, type: 3}
+    answers:
+    - answer: Miguel Zamalloa
+      isCorrect: 1
+      powerup: 0
+    - answer: Isabel Pita
+      isCorrect: 0
+      powerup: 0
+    - answer: Ignacio Fabregas
+      isCorrect: 0
+      powerup: 0
+  - questionText: Sistema operativo para informaticos
+    questionDuration: 10
+    profeSprite: {fileID: 21300000, guid: 9e7de9dad1e6c27429ad4a0ad9346bf7, type: 3}
+    answers:
+    - answer: Windows
+      isCorrect: 0
+      powerup: 0
+    - answer: Mac
+      isCorrect: 0
+      powerup: 0
+    - answer: Android
+      isCorrect: 0
+      powerup: 0
+    - answer: Linux
+      isCorrect: 1
+      powerup: 0
+  - questionText: Si?
+    questionDuration: 10
+    profeSprite: {fileID: -3737217333108074625, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: 01001110 01101111
+      isCorrect: 0
+      powerup: 0
+    - answer: 01010011 01101001
+      isCorrect: 1
+      powerup: 0
+  - questionText: Como se forman los grupos de practicas?
+    questionDuration: 6
+    profeSprite: {fileID: 21300000, guid: a9a8e714b2432b047a364ed3a60f8a83, type: 3}
+    answers:
+    - answer: Por preferencia
+      isCorrect: 0
+      powerup: 0
+    - answer: Por posicion de asiento
+      isCorrect: 0
+      powerup: 0
+    - answer: Por puntos cardinales
+      isCorrect: 1
+      powerup: 0
+    - answer: Por elementos de Avatar
+      isCorrect: 1
+      powerup: 0
+  - questionText: Los alumnos copian las practicas de cursos anteriores...
+    questionDuration: 10
+    profeSprite: {fileID: 21300000, guid: 2424fd4ec7ca87f44a3e70c129127dc5, type: 3}
+    answers:
+    - answer: No se corrigen y no puntuan lmao
+      isCorrect: 1
+      powerup: 0
+    - answer: Cambiar el enunciado
+      isCorrect: 0
+      powerup: 0
+  - questionText: La animacion en phaser...
+    questionDuration: 10
+    profeSprite: {fileID: 203739905220568640, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Animacion viene de "anima", el acto de dar vida
+      isCorrect: 1
+      powerup: 0
+    - answer: Se hace con spritesheets
+      isCorrect: 0
+      powerup: 0
+    - answer: Antes de la animacion digital, se tenia que proyectar cada frame como
+        un fotograma
+      isCorrect: 1
+      powerup: 0
+    - answer: Los hermanos Lumiere fueron pioneros de la animacion
+      isCorrect: 1
+      powerup: 0
+  - questionText: Te presento a mi perro
+    questionDuration: 10
+    profeSprite: {fileID: 203739905220568640, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Eso es un cleon
+      isCorrect: 1
+      powerup: 0
+    - answer: Eso es un gato
+      isCorrect: 1
+      powerup: 0
+    - answer: Pat?
+      isCorrect: 0
+      powerup: 0
+    - answer: Eso es github
+      isCorrect: 1
+      powerup: 0
+  - questionText: Famosa saga de PS4
+    questionDuration: 10
+    profeSprite: {fileID: 1405936903238025810, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: 'Horizon: Zero Dawn'
+      isCorrect: 0
+      powerup: 0
+    - answer: Spiderman PS4
+      isCorrect: 0
+      powerup: 0
+    - answer: Mario Bros
+      isCorrect: 1
+      powerup: 0
+    - answer: God of War
+      isCorrect: 0
+      powerup: 0
+  - questionText: 'Debe estar en el repo publico:'
+    questionDuration: 10
+    profeSprite: {fileID: 4001442472916971327, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Los apuntes de Samir
+      isCorrect: 0
+      powerup: 0
+    - answer: Los .exe
+      isCorrect: 0
+      powerup: 0
+    - answer: "Usuario y contrase\xF1a de Twitter"
+      isCorrect: 0
+      powerup: 0
+    - answer: Assets
+      isCorrect: 1
+      powerup: 0
+  - questionText: 'La varianza es:'
+    questionDuration: 10
+    profeSprite: {fileID: -8179870912509109453, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Una medida de dispersion de datos
+      isCorrect: 1
+      powerup: 0
+    - answer: Faltar a clase, pero solo algunas veces
+      isCorrect: 0
+      powerup: 0
+    - answer: "Los precios de cafeter\xEDa"
+      isCorrect: 1
+      powerup: 0
+  - questionText: Como esta mi gato?
+    questionDuration: 10
+    profeSprite: {fileID: 203739905220568640, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Muerto
+      isCorrect: 0
+      powerup: 0
+    - answer: Haciendo un merge
+      isCorrect: 1
+      powerup: 0
+    - answer: Vivo
+      isCorrect: 0
+      powerup: 0

@@ -1,0 +1,330 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f137868e6774a48950c5a9c02c8faa, type: 3}
+  m_Name: Question Memes
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: Cual es el lugar mas frio de la Tierra?
+    questionDuration: 7
+    profeSprite: {fileID: 203739905220568640, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Teruel existe (?)
+      isCorrect: 0
+      powerup: 0
+    - answer: Antartida
+      isCorrect: 1
+      powerup: 0
+    - answer: Donde vive Papa Noel
+      isCorrect: 0
+      powerup: 0
+    - answer: Club Penguin
+      isCorrect: 0
+      powerup: 0
+  - questionText: Cual es el lugar mas calido de la Tierra?
+    questionDuration: 10
+    profeSprite: {fileID: 203739905220568640, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Canarias
+      isCorrect: 0
+      powerup: 0
+    - answer: 'Parque Nacional: Valle de la Muerte'
+      isCorrect: 1
+      powerup: 0
+    - answer: Argentina en 2022
+      isCorrect: 0
+      powerup: 0
+  - questionText: Cual es el rio mas largo de la Peninsula Iberica?
+    questionDuration: 10
+    profeSprite: {fileID: -1736928041035241418, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: El Tajo
+      isCorrect: 1
+      powerup: 0
+    - answer: El Ebro
+      isCorrect: 0
+      powerup: 0
+    - answer: 'El Gallego '
+      isCorrect: 0
+      powerup: 0
+    - answer: El Guadalentin
+      isCorrect: 0
+      powerup: 0
+  - questionText: "Quien NO ha invadido Espa\xF1a?"
+    questionDuration: 10
+    profeSprite: {fileID: -1736928041035241418, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Visigodos (Y Carlomagno)
+      isCorrect: 0
+      powerup: 0
+    - answer: Romanos (Y el Papa)
+      isCorrect: 0
+      powerup: 0
+    - answer: Andorra (Y los youtubers)
+      isCorrect: 1
+      powerup: 0
+    - answer: Como no, Francia
+      isCorrect: 0
+      powerup: 0
+  - questionText: Cual es el tiempo "programando"?
+    questionDuration: 10
+    profeSprite: {fileID: 5074963065193959036, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Programando que es gerundio
+      isCorrect: 1
+      powerup: 0
+    - answer: Preterito de algo
+      isCorrect: 0
+      powerup: 0
+    - answer: Un futuro negro
+      isCorrect: 0
+      powerup: 0
+  - questionText: Como se traduce "Cagalera" en ingles?
+    questionDuration: 10
+    profeSprite: {fileID: -8179870912509109453, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Having the shits
+      isCorrect: 1
+      powerup: 0
+    - answer: Oh shit
+      isCorrect: 0
+      powerup: 0
+    - answer: Crapsickle
+      isCorrect: 0
+      powerup: 0
+  - questionText: Encuentra la X en el siguiente examen
+    questionDuration: 10
+    profeSprite: {fileID: 1405936903238025810, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: X AE A-XII
+      isCorrect: 1
+      powerup: 0
+    - answer: Buscar en un mapa del tesoro
+      isCorrect: 0
+      powerup: 0
+    - answer: One Piece
+      isCorrect: 0
+      powerup: 0
+    - answer: Que dices, mejor Naruto
+      isCorrect: 0
+      powerup: 0
+  - questionText: Cual es el valor de la gravedad?
+    questionDuration: 10
+    profeSprite: {fileID: -3737217333108074625, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: 0.0098 km/s
+      isCorrect: 1
+      powerup: 0
+    - answer: 98000 cm/s
+      isCorrect: 0
+      powerup: 0
+    - answer: 0.001 km/s
+      isCorrect: 0
+      powerup: 0
+    - answer: 0.0006 ft/s
+      isCorrect: 0
+      powerup: 0
+  - questionText: En que provincia se encuentra Bustamante?
+    questionDuration: 10
+    profeSprite: {fileID: 4001442472916971327, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Cantabria, cerca del banco Santander
+      isCorrect: 1
+      powerup: 0
+    - answer: Frontera de Madrid
+      isCorrect: 0
+      powerup: 0
+    - answer: Andalucia, al lado de la Alhambra
+      isCorrect: 0
+      powerup: 0
+  - questionText: Que representa la formula quimica C2H5OH?
+    questionDuration: 10
+    profeSprite: {fileID: -8179870912509109453, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Pero tu estas borracho o que?
+      isCorrect: 1
+      powerup: 0
+    - answer: Menudo cacao mental me llevas
+      isCorrect: 0
+      powerup: 0
+    - answer: Demasiado cafe para las 8:00
+      isCorrect: 0
+      powerup: 0
+    - answer: Te ingles
+      isCorrect: 0
+      powerup: 0
+  - questionText: Cual de estos esta en la sangre?
+    questionDuration: 10
+    profeSprite: {fileID: -1736928041035241418, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Globulo (0,1,1) RGB
+      isCorrect: 0
+      powerup: 0
+    - answer: Linfocitos
+      isCorrect: 1
+      powerup: 0
+    - answer: Paletos
+      isCorrect: 0
+      powerup: 0
+  - questionText: Quien de estos es de la Generacion del 98?
+    questionDuration: 10
+    profeSprite: {fileID: 4001442472916971327, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Miguel de Unamuno
+      isCorrect: 1
+      powerup: 0
+    - answer: Pederico Feinado Lorca
+      isCorrect: 0
+      powerup: 0
+    - answer: Raphael Martos
+      isCorrect: 0
+      powerup: 0
+    - answer: Damaso Alonso
+      isCorrect: 0
+      powerup: 0
+  - questionText: Cual es el valor de pi?
+    questionDuration: 10
+    profeSprite: {fileID: -8179870912509109453, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: No vi la vida de Pi
+      isCorrect: 0
+      powerup: 0
+    - answer: 3,14...
+      isCorrect: 1
+      powerup: 0
+    - answer: 'La clave de Steam '
+      isCorrect: 0
+      powerup: 0
+    - answer: 3,14
+      isCorrect: 0
+      powerup: 0
+  - questionText: Quien es el padre de la Teoria de la Evolucion?
+    questionDuration: 10
+    profeSprite: {fileID: -3737217333108074625, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: 'Tito Darwin '
+      isCorrect: 1
+      powerup: 0
+    - answer: Papi Galileo
+      isCorrect: 0
+      powerup: 0
+    - answer: Jesse Schell
+      isCorrect: 0
+      powerup: 0
+    - answer: El amigo y vecino Marx
+      isCorrect: 0
+      powerup: 0
+  - questionText: Cual de estas canciones NO es de Queen?
+    questionDuration: 10
+    profeSprite: {fileID: 5074963065193959036, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Killer Queen Bites the Dust
+      isCorrect: 0
+      powerup: 0
+    - answer: Don't Stop Me Now
+      isCorrect: 0
+      powerup: 0
+    - answer: This is Made in Heaven
+      isCorrect: 0
+      powerup: 0
+    - answer: Scatman (ski-ba-bop-ba-dop-bop)
+      isCorrect: 1
+      powerup: 0
+  - questionText: Quien de todos estos no existe?
+    questionDuration: 10
+    profeSprite: {fileID: -1736928041035241418, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Descartes
+      isCorrect: 1
+      powerup: 0
+    - answer: Los padres
+      isCorrect: 0
+      powerup: 0
+    - answer: Perez el Raton
+      isCorrect: 0
+      powerup: 0
+    - answer: Blaze the Cat
+      isCorrect: 0
+      powerup: 0
+  - questionText: 'Que barco se atasco en el Canal de Suez? '
+    questionDuration: 10
+    profeSprite: {fileID: 1405936903238025810, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Titanic
+      isCorrect: 0
+      powerup: 0
+    - answer: Skidbladnir
+      isCorrect: 0
+      powerup: 0
+    - answer: La Santa Maria
+      isCorrect: 0
+      powerup: 0
+    - answer: Evergreen
+      isCorrect: 1
+      powerup: 0
+  - questionText: Cual fue la ultima variante de COVID?
+    questionDuration: 10
+    profeSprite: {fileID: 1405936903238025810, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: WUHAN
+      isCorrect: 0
+      powerup: 0
+    - answer: OMICRON
+      isCorrect: 1
+      powerup: 0
+    - answer: DELTA
+      isCorrect: 0
+      powerup: 0
+    - answer: ALPHA
+      isCorrect: 1
+      powerup: 0
+  - questionText: La Tierra es plana?
+    questionDuration: 10
+    profeSprite: {fileID: 1405936903238025810, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Si
+      isCorrect: 0
+      powerup: 0
+    - answer: No
+      isCorrect: 1
+      powerup: 0
+    - answer: Como tu encefalograma
+      isCorrect: 0
+      powerup: 0
+  - questionText: 'Completa la frase: "Yo soy..."'
+    questionDuration: 10
+    profeSprite: {fileID: 1405936903238025810, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Manolo el del Bombo
+      isCorrect: 1
+      powerup: 0
+    - answer: Inevitable
+      isCorrect: 1
+      powerup: 0
+    - answer: Tu padre
+      isCorrect: 1
+      powerup: 0
+  - questionText: Como va Sam...?
+    questionDuration: 10
+    profeSprite: {fileID: 1405936903238025810, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
+    answers:
+    - answer: Lentin
+      isCorrect: 1
+      powerup: 0
+    - answer: Con cuidadin
+      isCorrect: 0
+      powerup: 0
+    - answer: En RENFE
+      isCorrect: 0
+      powerup: 0
+    - answer: A caballo
+      isCorrect: 0
+      powerup: 0
