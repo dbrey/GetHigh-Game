@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour
 {
-
     public AudioClip sevilla;
     public AudioClip montana;
 
@@ -28,7 +27,6 @@ public class MusicManager : MonoBehaviour
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else Destroy(gameObject);
-
     }
 
 
