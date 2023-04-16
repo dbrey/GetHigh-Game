@@ -1,6 +1,7 @@
 using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
+using Telemetry;
 using UnityEngine;
 using UnityEngine.SceneManagement; 
 
@@ -36,6 +37,12 @@ public class ChangeScene : MonoBehaviour
     {
         SignalBus<PlaySoundSignal>.Fire(new PlaySoundSignal(Sounds.BotonYApuntes));
         await transition.EndLerp();
+        if (sceneName == "Escena Juego Normal")
+            Tracker.Instance.TrackEvent(new StartGame());
+        else if (sceneName == "Escena Rioni")
+            Tracker.Instance.TrackEvent(new StartGame());
+        else if (sceneName == "Menu Inicio")
+            Tracker.Instance.TrackEvent(new EndGame());
         SceneManager.LoadScene(sceneName);
     }
 }

@@ -11,7 +11,12 @@ public class TelemetrySystem : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         Tracker.Init(userId);
+        Tracker.Instance.TrackEvent(new StartSession());
     }
-    
-    private void OnApplicationQuit() => Tracker.End();
+
+    private void OnApplicationQuit()
+    {
+        Tracker.Instance.TrackEvent(new EndSession());
+        Tracker.End();
+    }
 }

@@ -1,6 +1,7 @@
 using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
+using Telemetry;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,6 +17,7 @@ public class BlocksSystem : MonoBehaviour
     [SerializeField] Sprite[] blockSprites;
     int numOfCubes;
 
+    int telBlkCount = 0;
 
     [SerializeField] Bounds blockSpawnArea;
     [SerializeField] Vector3 origin;
@@ -41,7 +43,10 @@ public class BlocksSystem : MonoBehaviour
         instantiated.GetComponent<SpriteRenderer>().sprite = blockSprites.GetRandom();
         instantiated.transform.parent = blockInventory;
         instantiated.GetComponent<BlockObject>().SetNewScale(Random.Range(1, 2.5f));
+        instantiated.GetComponent<BlockObject>().SetBlkId(telBlkCount);
         MoveSpawnCube(instantiated.transform, pointInBounds).Forget();
+
+        Tracker.Instance.TrackEvent(new GetBlock(telBlkCount++));
     }
 
     async UniTaskVoid MoveSpawnCube(Transform transform, Vector3 point)

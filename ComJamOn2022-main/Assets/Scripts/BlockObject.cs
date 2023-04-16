@@ -2,6 +2,7 @@ using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using Telemetry;
 using UnityEngine;
 
 public class BlockObject : MonoBehaviour
@@ -13,6 +14,9 @@ public class BlockObject : MonoBehaviour
     SpriteRenderer sprite;
     Collider2D collider;
     CancellationTokenSource source;
+    int blkId = -1;
+
+    public void SetBlkId(int id) => blkId = id;
 
     void Start()
     {
@@ -44,6 +48,8 @@ public class BlockObject : MonoBehaviour
         RestoreAlpha().Forget();
         transform.SetParent(null);
         rb.isKinematic = false;
+
+        Tracker.Instance.TrackEvent(new ReleaseBlock(blkId));
     }
 
     async UniTaskVoid RestoreAlpha()
@@ -69,6 +75,8 @@ public class BlockObject : MonoBehaviour
         SignalBus<PlaySoundSignal>.Fire(new PlaySoundSignal(Sounds.BotonYApuntes));
         collider.enabled = false;
         ScaleOverTime().Forget();
+
+        Tracker.Instance.TrackEvent(new GrabBlock(blkId));
     }
 
     public void SetNewScale(float newScale) => this.newScale = newScale;

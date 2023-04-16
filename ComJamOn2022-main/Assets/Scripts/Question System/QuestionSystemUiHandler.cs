@@ -2,6 +2,7 @@ using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using Telemetry;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -89,7 +90,6 @@ public class QuestionSystemUiHandler : MonoBehaviour
                 break;
         }
 
-
         Debug.Log("The rock");
         rockQuestionCurrent = 0;
         OnAnswered();
@@ -166,6 +166,8 @@ public class QuestionSystemUiHandler : MonoBehaviour
 
     async private UniTaskVoid OnAnsweredTask(bool isCorrect = false)
     {
+        Tracker.Instance.TrackEvent(new TimeReply(0, 0, isCorrect));
+
         if (isCorrect && !isRockQuestion)
         {
             blockSystem.SpawnBlock();
@@ -194,5 +196,6 @@ public class QuestionSystemUiHandler : MonoBehaviour
         if (!isRockQuestion) sharedQuestion.NextQuestion();
         else rockSharedQuestion.NextQuestion();
         UpdateUI();
+        Tracker.Instance.TrackEvent(new TimeStart(0, 0));
     }
 }
