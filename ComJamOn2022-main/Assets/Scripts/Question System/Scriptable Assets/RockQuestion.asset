@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f137868e6774a48950c5a9c02c8faa, type: 3}
   m_Name: RockQuestion
   m_EditorClassIdentifier: 
+  questionSetId: 2
   questions:
-  - questionText: Se el tipo de persona que cuando se levante, haya terminado el
+  - questionId: 0
+    questionText: Se el tipo de persona que cuando se levante, haya terminado el
       proyecto
     questionDuration: 0
     profeSprite: {fileID: -2749225959190097586, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
@@ -24,7 +26,8 @@ MonoBehaviour:
     - answer: Mi corazon no tolera sobredosis de azucar
       isCorrect: 0
       powerup: 4
-  - questionText: 'Los aprobados no se consiguen en un solo dia, por ello necesitas
+  - questionId: 1
+    questionText: 'Los aprobados no se consiguen en un solo dia, por ello necesitas
       descansar. '
     questionDuration: 0
     profeSprite: {fileID: -2749225959190097586, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
@@ -35,7 +38,8 @@ MonoBehaviour:
     - answer: No gracias, prefiero CRUNCH
       isCorrect: 0
       powerup: 3
-  - questionText: 'El exito comienza contigo, pero una taza de cafe ayuda '
+  - questionId: 2
+    questionText: 'El exito comienza contigo, pero una taza de cafe ayuda '
     questionDuration: 0
     profeSprite: {fileID: -2749225959190097586, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
     answers:
@@ -45,7 +49,8 @@ MonoBehaviour:
     - answer: No me gusta la cafeina
       isCorrect: 0
       powerup: 1
-  - questionText: Sangre, sudor y apuntes. A por todas!
+  - questionId: 3
+    questionText: Sangre, sudor y apuntes. A por todas!
     questionDuration: 0
     profeSprite: {fileID: -2749225959190097586, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
     answers:
@@ -55,7 +60,8 @@ MonoBehaviour:
     - answer: Prefiero hacerlo por mi cuenta
       isCorrect: 0
       powerup: 2
-  - questionText: "Con inspiraci\xF3n y un poco de picaresca, puedes conseguirlo
+  - questionId: 4
+    questionText: "Con inspiraci\xF3n y un poco de picaresca, puedes conseguirlo
       todo"
     questionDuration: 0
     profeSprite: {fileID: -2749225959190097586, guid: a69503a1a35ff704a95e223f55d307c8, type: 3}
