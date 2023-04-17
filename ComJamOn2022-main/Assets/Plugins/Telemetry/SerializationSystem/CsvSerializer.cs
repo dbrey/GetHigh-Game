@@ -10,7 +10,7 @@ using Telemetry.Interfaces;
 
 namespace Telemetry.SerializationSystem
 {
-    internal class CsvSerializer : ISerializer
+    public sealed class CsvSerializer : ISerializer
     {
         private const string Delimiter = ",";
         private const string LineBreak = "\n";
@@ -19,8 +19,6 @@ namespace Telemetry.SerializationSystem
         {
             using (StringWriter sb = new StringWriter())
             {
-                sb.Write($"Type,{e.GetType().Name},");
-
                 var properties = e.GetType().GetProperties();
                 foreach (var property in properties)
                     sb.Write($"{property.Name},{property.GetValue(e)},");

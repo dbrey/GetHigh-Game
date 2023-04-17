@@ -9,6 +9,7 @@ namespace Telemetry
 {
     public abstract class Event
     {
+        public string Type { get => GetType().Name; }
         public string id_user { get; internal set; }
         public Guid id_session { get; internal set; }
         public int id_game { get; internal set; }

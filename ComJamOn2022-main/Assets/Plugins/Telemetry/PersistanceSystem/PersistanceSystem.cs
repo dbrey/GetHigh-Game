@@ -8,7 +8,7 @@ using Telemetry;
 
 namespace Telemetry.PersistanceSystem
 {
-    internal abstract class PersistanceSystem : IPersistance
+    public abstract class PersistanceSystem : IPersistance
     {
         private readonly ISerializer serializer;
 

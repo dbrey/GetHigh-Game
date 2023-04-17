@@ -1,4 +1,2 @@
-{"id_user":"Guille","id_session":"567280c8-30d2-4899-8f94-83f9832ea13c","id_game":-1,"send_time":1681721358}
-{"id_user":"Guille","id_session":"567280c8-30d2-4899-8f94-83f9832ea13c","id_game":-1,"send_time":1681721358}
-{"id_user":"Guille","id_session":"567280c8-30d2-4899-8f94-83f9832ea13c","id_game":-1,"send_time":1681721363}
-{"id_user":"Guille","id_session":"567280c8-30d2-4899-8f94-83f9832ea13c","id_game":-1,"send_time":1681721363}
+{"Type":"StartSession","id_user":"Guille","id_session":"985ee0ab-0068-41f1-89ad-51528eb5459b","id_game":-1,"send_time":1681723597}
+{"Type":"EndSession","id_user":"Guille","id_session":"985ee0ab-0068-41f1-89ad-51528eb5459b","id_game":-1,"send_time":1681723599}

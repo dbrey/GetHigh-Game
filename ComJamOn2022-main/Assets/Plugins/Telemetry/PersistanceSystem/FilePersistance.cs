@@ -3,7 +3,7 @@ using Telemetry.Interfaces;
 
 namespace Telemetry.PersistanceSystem
 {
-    internal class FilePersistance : PersistanceSystem
+    public sealed class FilePersistance : PersistanceSystem
     {
         private string path;
 

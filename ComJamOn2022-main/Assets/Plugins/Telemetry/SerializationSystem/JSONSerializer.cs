@@ -8,7 +8,7 @@ using Telemetry.Interfaces;
 
 namespace Telemetry.SerializationSystem
 {
-    public class JSONSerializer : ISerializer
+    public sealed class JSONSerializer : ISerializer
     {
         public object Serialize(Event e) => JsonConvert.SerializeObject(e, new JsonSerializerSettings
         {
