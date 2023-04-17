@@ -103,6 +103,7 @@ public class QuestionSystemUiHandler : MonoBehaviour
         UpdateUI();
         source = new CancellationTokenSource();
         QuestionTimeout(source.Token).Forget();
+        Tracker.Instance.TrackEvent(new TimeStart(sharedQuestion.GetCurrentQuestion.questionId, sharedQuestion.QuestionSetId));
     }
 
     private void Update()
