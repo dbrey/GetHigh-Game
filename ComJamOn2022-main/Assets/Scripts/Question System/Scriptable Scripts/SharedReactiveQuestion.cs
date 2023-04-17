@@ -1,17 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Telemetry;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Question System/Shared Question", fileName = "Shared Question")]
 public class SharedReactiveQuestion : ScriptableObject
 {
+    public int QuestionSetId { get; private set; }
     private Question[] questions;
     private int currentQuestion = 0;
 
     public void Initialize(QuestionAssetGenerator generator)
     {
         questions = generator.GetShuffleQuestions();
+        QuestionSetId = generator.QuestionSetId;
         currentQuestion = 0;
     }
 
@@ -28,6 +31,7 @@ public class SharedReactiveQuestion : ScriptableObject
         }
 
         var selectedAnswer = GetAnswers(currentQuestion)[answerIndex];
+        Tracker.Instance.TrackEvent(new TimeReply(GetCurrentQuestion.questionId, QuestionSetId, selectedAnswer.isCorrect));
         OnQuestionAnswered?.Invoke(GetAnswers(currentQuestion)[answerIndex].isCorrect);
     }
 
@@ -39,6 +43,8 @@ public class SharedReactiveQuestion : ScriptableObject
             questions.ShuffleQuestions();
             currentQuestion = 0;
         }
+
+        Tracker.Instance.TrackEvent(new TimeStart(GetCurrentQuestion.questionId, QuestionSetId));
     }
 
     public int GetQuestionIndex => currentQuestion;

@@ -166,8 +166,6 @@ public class QuestionSystemUiHandler : MonoBehaviour
 
     async private UniTaskVoid OnAnsweredTask(bool isCorrect = false)
     {
-        Tracker.Instance.TrackEvent(new TimeReply(0, 0, isCorrect));
-
         if (isCorrect && !isRockQuestion)
         {
             blockSystem.SpawnBlock();
@@ -196,6 +194,5 @@ public class QuestionSystemUiHandler : MonoBehaviour
         if (!isRockQuestion) sharedQuestion.NextQuestion();
         else rockSharedQuestion.NextQuestion();
         UpdateUI();
-        Tracker.Instance.TrackEvent(new TimeStart(0, 0));
     }
 }
