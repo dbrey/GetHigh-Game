@@ -10,18 +10,23 @@ public class TelemetrySystem : MonoBehaviour
     [SerializeField]
     string userId;
 
+    private static TelemetrySystem instance;
+
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
-        // Por ahora solo queremos guardar la última ejecución del tracker
-        File.Delete("./logs.json");
-        File.Delete("./logs.csv");
-        Tracker.Init(userId);
-        Tracker.Instance.AddPersistanceSystem(new FilePersistance(new CsvSerializer(), "./logs.csv"));
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+            // Por ahora solo queremos guardar la última ejecución del tracker
+            File.Delete("./logs.json");
+            File.Delete("./logs.csv");
+            Tracker.Init(userId);
+            Tracker.Instance.AddPersistanceSystem(new FilePersistance(new CsvSerializer(), "./logs.csv"));
+        }
+        else
+            Destroy(gameObject);
     }
 
-    private void OnApplicationQuit()
-    {
-        Tracker.End();
-    }
+    private void OnApplicationQuit() => Tracker.End();
 }

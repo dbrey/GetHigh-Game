@@ -94,6 +94,7 @@ public class BlocksSystem : MonoBehaviour
     {
         finished = true; 
         await transition.EndLerp();
+        Tracker.Instance.TrackEvent(new EndGame());
         SceneManager.LoadScene("Game Over");
     }
 

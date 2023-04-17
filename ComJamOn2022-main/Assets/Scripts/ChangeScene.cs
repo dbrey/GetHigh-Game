@@ -10,12 +10,14 @@ public class ChangeScene : MonoBehaviour
     public void SceneGame()
     {
         GenericSceneChange("Escena Rioni").Forget();
+        Tracker.Instance.TrackEvent(new StartGame());
         //SceneManager.LoadScene("Escena Rioni");
     }
 
     public void SceneGameNormal()
     {
         GenericSceneChange("Escena Juego Normal").Forget();
+        Tracker.Instance.TrackEvent(new StartGame());
         //SceneManager.LoadScene("Escena Rioni");
     }
 
@@ -37,12 +39,6 @@ public class ChangeScene : MonoBehaviour
     {
         SignalBus<PlaySoundSignal>.Fire(new PlaySoundSignal(Sounds.BotonYApuntes));
         await transition.EndLerp();
-        if (sceneName == "Escena Juego Normal")
-            Tracker.Instance.TrackEvent(new StartGame());
-        else if (sceneName == "Escena Rioni")
-            Tracker.Instance.TrackEvent(new StartGame());
-        else if (sceneName == "Menu Inicio")
-            Tracker.Instance.TrackEvent(new EndGame());
         SceneManager.LoadScene(sceneName);
     }
 }
