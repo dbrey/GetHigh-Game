@@ -1,6 +1,7 @@
 using UnityEngine;
 
 using Telemetry;
+using System.IO;
 
 public class TelemetrySystem : MonoBehaviour
 {
@@ -10,13 +11,12 @@ public class TelemetrySystem : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
+        File.Delete("./logs.json");
         Tracker.Init(userId);
-        Tracker.Instance.TrackEvent(new StartSession());
     }
 
     private void OnApplicationQuit()
     {
-        Tracker.Instance.TrackEvent(new EndSession());
         Tracker.End();
     }
 }
